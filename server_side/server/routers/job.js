@@ -122,7 +122,7 @@ router.post("/apply/:empId", async (req, res) => {
   }
 });
 
-// 📦 Get employee apply status
+// 📦 Get employee apply status.
 router.get("/status/:empId", async (req, res) => {
   try {
     const emp = await Employee.findOne({ empId: req.params.empId });
